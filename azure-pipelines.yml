@@ -6,7 +6,10 @@
 trigger:
 - master
 
-pool: Default
+pool:
+  name: Default
+  demands:
+   - agent.name -equals DESKTOP-49N1EJB
 
 steps:
 - task: Maven@3
